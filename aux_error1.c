@@ -6,7 +6,7 @@
  * @datash: data relevant (directory)
  * @msg: message to print
  * @error: output message
- * @ver_str: counter line
+ * @ver_str: counter lines
  * Return: error message
  */
 char *strcat_cd(data_shell *datash, char *msg, char *error, char *ver_str)
@@ -37,6 +37,7 @@ char *strcat_cd(data_shell *datash, char *msg, char *error, char *ver_str)
 	_strcat(error, "\0");
 	return (error);
 }
+
 /**
  * error_get_cd - error message for cd command in get_cd
  * @datash: data relevant (directory)
@@ -75,7 +76,6 @@ char *error_get_cd(data_shell *datash)
 
 	return (error);
 }
-
 
 /**
  * error_not_found - generic error message for command not found
